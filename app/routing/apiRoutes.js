@@ -18,3 +18,15 @@ module.exports = function(app) {
         //for loop to check every array for its number, push that into its own new array. those are in order of friends#.
     })
 }
+
+//capture incoming req.body
+//add function for a+b
+//empty Array
+//first friend[i] - parseInt new[i] 
+//push difference into array every time
+//add all into one
+//friends.totaldiff = added all itno one
+
+//new array
+//new loop, pull out all totaldiffs into new blank array
+//run sort with index and val
