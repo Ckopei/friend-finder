@@ -27,11 +27,11 @@
         <h3>Link to Photo Image (Required)</h3>
         <input type="text" id="photo" class="form-control" required>
         <hr>
-        //begin Questions
+        <!-- begin Questions -->
         <div>
             <h3>Question 1</h3>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-            <select class="custom-select" id="q1" size="3">
+            <select class="custom-select" id="q1">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -42,7 +42,7 @@
 
             <h3>Question 2</h3>
             <h4>Technology is a large part of your life.</h4>
-            <select class="custom-select" id="q2" size="3">
+            <select class="custom-select" id="q2">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -53,7 +53,7 @@
 
             <h3>Question 3</h3>
             <h4>Music is a large part of your life.</h4>
-            <select class="custom-select" id="q3" size="3">
+            <select class="custom-select" id="q3">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -64,7 +64,7 @@
 
             <h3>Question 4</h3>
             <h4>You see yourself as a social butterfly.</h4>
-            <select class="custom-select" id="q4" size="3">
+            <select class="custom-select" id="q4">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -75,7 +75,7 @@
 
             <h3>Question 5</h3>
             <h4>You'd rather stay in then go to the bar'.</h4>
-            <select class="custom-select" id="q5" size="3">
+            <select class="custom-select" id="q5">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -86,7 +86,7 @@
 
             <h3>Question 6</h3>
             <h4>Being in nature is better than being in the city.</h4>
-            <select class="custom-select" id="q6" size="3">
+            <select class="custom-select" id="q6">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -97,7 +97,7 @@
 
             <h3>Question 7</h3>
             <h4>You would go out of your way to help a stranger.</h4>
-            <select class="custom-select" id="q7" size="3">
+            <select class="custom-select" id="q7">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -108,7 +108,7 @@
 
             <h3>Question 8</h3>
             <h4>Fun activities cost money.</h4>
-            <select class="custom-select" id="q8" size="3">
+            <select class="custom-select" id="q8">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -119,7 +119,7 @@
 
             <h3>Question 9</h3>
             <h4>My friends would say i'm very energetic</h4>
-            <select class="custom-select" id="q9" size="3">
+            <select class="custom-select" id="q9">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -130,7 +130,7 @@
 
             <h3>Question 10</h3>
             <h4>I like to avoid traveling.</h4>
-            <select class="custom-select" id="q10" size="3">
+            <select class="custom-select" id="q10">
                 <option selected>Open this select menu</option>
                 <option value="1">One (Strongly Disagree)</option>
                 <option value="2">Two</option>
@@ -138,6 +138,38 @@
                 <option value="4">Four</option>
                 <option value="5">Five (Strongly Agree)</option>
             </select>
+            <br>
+            <hr>
+
+            <button id="submitBtn" class="btn aqua-gradient">Aqua</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+
+                <!-- Add .modal-dialog-centered to .modal-dialog to vertically center the modal -->
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Meet Your Match!</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- these two are filled dyanamically with the post request's response. -->
+                            <h3 id="match-name"></h3>
+                            <img id="match-id" src="" alt="friend">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
