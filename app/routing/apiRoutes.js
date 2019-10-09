@@ -8,25 +8,43 @@ module.exports = function(app) {
     })
 
     app.post("/api/friends", function(req,res){
-        friends.push(req.body)
-        //HOW DO I GET MY SCORES RESPONSE TO BE NOT A STRING.
+        
         console.log(req.body)
-        res.json(friends)
-        //post from form
-        //this will be where i do my logic. comparing scores with friends already in
-        //two loops to compare each user to currently held user data.
-        //for loop to check every array for its number, push that into its own new array. those are in order of friends#.
+        
+//capture incoming req.body
+//add loop for friend index
+//add loop for a+b
+//new loop, push difference to var
+//run a basic sort by checking each aaginast the last lowest
+        var newFriend = req.body
+        //max score difference you can possibly have is 50. 1-5 answer and 10 questions.
+        var maxDifference = 50
+        //this is where I store the friend[index] of the current lowest difference
+        var matchIndex = 0
+        //first for loop just loops through my friends array
+        for (var i = 0; i < friends.length; i++){
+			var scoresDifference;
+            //second for loop is whats used to go through the individual scores in the scores array. this loop will complete before
+            //the i loop ever iterates
+			for (var x = 0; x < 10 ; x++){
+				scoresDifference = Math.abs(friends[i].scores[x] - parseInt(req.body.scores[x]));
+            }
+            console.log(scoresDifference)
+            //if the difference calculated above is less than 50, it will replace the maxDifference
+			if (scoresDifference < maxDifference) {
+                scoresDifference = maxDifference
+                //set the matchIndex to the current index of the friend who holds the lowest difference
+				matchIndex = i;
+            }
+            else {
+                console.log(friends[i].name+" didnt work out.")
+            }
+        }
+
+        res.json(friends[matchIndex])
+        friends.push(req.body)
     })
+
+
 }
 
-//capture incoming req.body
-//add function for a+b
-//empty Array
-//first friend[i] - parseInt new[i] 
-//push difference into array every time
-//add all into one
-//friends.totaldiff = added all itno one
-
-//new array
-//new loop, pull out all totaldiffs into new blank array
-//run sort with index and val
