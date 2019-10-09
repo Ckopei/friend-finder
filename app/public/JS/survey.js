@@ -1,8 +1,7 @@
 // Material Select Initialization
 
-    $('.custom-select').materialSelect();
-
     $("#submitBtn").on("click", function () {
+        console.log($("#q1").val())
         event.preventDefault();
         // Form validation
         function validateForm() {
@@ -43,11 +42,11 @@
             //posting the new var to the server, waiting on a response  (data) which will be my comparison, name, and photo of new friend.
             $.post("/api/friends", userData, function(data){
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-              $("#match-name").text(data.name);
-              $("#match-img").attr("src", data.photo);
+              $("#match-name").text(data[0].name);
+              $("#match-img").attr("src", data[0].photo);
     
               // Show the modal with the best match
-              $("#results-modal").modal("toggle");
+              $("#exampleModalCenter").modal("show")
             })
         }
         //if any are empty, throw an alert.

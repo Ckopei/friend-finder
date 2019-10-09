@@ -8,6 +8,9 @@ module.exports = function(app) {
     })
 
     app.post("/api/friends", function(req,res){
+        friends.push(req.body)
+        //HOW DO I GET MY SCORES RESPONSE TO BE NOT A STRING.
+        console.log(req.body)
         res.json(friends)
         //post from form
         //this will be where i do my logic. comparing scores with friends already in

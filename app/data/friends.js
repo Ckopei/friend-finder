@@ -1,7 +1,7 @@
 var friends = [
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Z U C C",
+        "photo": "https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2018/04/gettyimages-944363520_copy_-_h_2018.jpg",
         "scores": [
             5,
             1,
@@ -16,8 +16,8 @@ var friends = [
         ]
     },
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Z U C C",
+        "photo": "https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2018/04/gettyimages-944363520_copy_-_h_2018.jpg",
         "scores": [
             5,
             1,
@@ -32,8 +32,8 @@ var friends = [
         ]
     },
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Z U C C",
+        "photo": "https://cdn1.thr.com/sites/default/files/imagecache/landscape_928x523/2018/04/gettyimages-944363520_copy_-_h_2018.jpg",
         "scores": [
             5,
             1,

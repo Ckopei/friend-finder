@@ -14,13 +14,13 @@
     <title>Survey</title>
 </head>
 
-<body>
+<body class="rainy-ashville-gradient">
 
-    <div class="container">
+    <div class="container rainy-ashville-gradient">
         <h1>Survey Questions</h1>
-        <a href="/">Home</a>
         <hr>
         <h2>About You</h2>
+        <br>
         <h3>Name (Required)</h3>
         <input type="text" id="name" class="form-control mb-4" placeholder="Name">
         <h3></h3>
@@ -40,7 +40,7 @@
                 <option value="5">Five (Strongly Agree)</option>
             </select>
 
-            <h3>Question 2</h3>
+            <!-- <h3>Question 2</h3>
             <h4>Technology is a large part of your life.</h4>
             <select class="custom-select" id="q2">
                 <option selected>Open this select menu</option>
@@ -137,11 +137,11 @@
                 <option value="3">Three</option>
                 <option value="4">Four</option>
                 <option value="5">Five (Strongly Agree)</option>
-            </select>
+            </select> -->
             <br>
             <hr>
 
-            <button id="submitBtn" class="btn aqua-gradient">Aqua</button>
+            <button id="submitBtn" class="btn mean-fruit-gradient">Submit</button>
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -161,7 +161,7 @@
                         <div class="modal-body">
                             <!-- these two are filled dyanamically with the post request's response. -->
                             <h3 id="match-name"></h3>
-                            <img id="match-id" src="" alt="friend">
+                            <img id="match-img" style="width: 100%" src="" alt="friend">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -170,8 +170,11 @@
                 </div>
             </div>
         </div>
+        <footer>
+                <a href="/">Home</a>
+        </footer>
+        
     </div>
-
 
 
 
