@@ -9,7 +9,7 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 //use public as our static folder.
-app.use(express.static("public"))
+app.use(express.static("./app/public"))
 
 require("./app/routing/apiRoutes")(app)
 require("./app/routing/htmlRoutes")(app)

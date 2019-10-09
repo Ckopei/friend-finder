@@ -1,5 +1,6 @@
 var friends = require("../data/friends")
 
+
 module.exports = function(app) {
     app.get("/api/friends", function(req,res){
         //display on page 
@@ -7,6 +8,7 @@ module.exports = function(app) {
     })
 
     app.post("/api/friends", function(req,res){
+        res.json(friends)
         //post from form
         //this will be where i do my logic. comparing scores with friends already in
         //two loops to compare each user to currently held user data.

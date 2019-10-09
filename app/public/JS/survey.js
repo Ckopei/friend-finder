@@ -1,6 +1,7 @@
 // Material Select Initialization
-$(document).ready(function () {
+
     $('.custom-select').materialSelect();
+
     $("#submitBtn").on("click", function () {
         event.preventDefault();
         // Form validation
@@ -54,5 +55,3 @@ $(document).ready(function () {
             alert("Please fill out every question.")
         }
     })
-
-});
