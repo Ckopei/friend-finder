@@ -5,3 +5,7 @@ input, h1, h2, h3, h4, h5, p {
     height: 100vh;
     margin-bottom: 0;
 }
+
+.cursive, h3, h4 {
+    font-family: Apple Chancery, cursive
+}
